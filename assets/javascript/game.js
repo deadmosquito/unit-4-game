@@ -7,9 +7,9 @@ $( document ).ready(function(){
     
     //Generate random number for each crystal or pokeball here
     var num1 = Math.floor(Math.random()*12+1)
-    var num2 = Math.floor(Math.random()*12+1)
-    var num3 = Math.floor(Math.random()*12+1)
-    var num4 = Math.floor(Math.random()*12+1)
+    var num2 = Math.floor(Math.random()*12+4)
+    var num3 = Math.floor(Math.random()*12+7)
+    var num4 = Math.floor(Math.random()*12+10)
     
     // Variables to track wins, losses and total
     var playerTotal = 0; 
@@ -23,14 +23,14 @@ $( document ).ready(function(){
   // Reset game
   function reset(){
       //makes it so it wont go under 31 or above 100
-        Random = Math.floor(Math.random()*69 + 31);
+        Random = Math.floor(Math.random()*99 + 31);
         console.log(Random)
         $('#scoreToMatch').text(Random);
         // the +1 is so the pokeball never equals zero
         num1 = Math.floor(Math.random()*12+1);
-        num2 = Math.floor(Math.random()*12+1);
-        num3 = Math.floor(Math.random()*12+1);
-        num4 = Math.floor(Math.random()*12+1);
+        num2 = Math.floor(Math.random()*12+4);
+        num3 = Math.floor(Math.random()*12+7);
+        num4 = Math.floor(Math.random()*12+10);
         playerTotal = 0;
         $('#totalScore').text(playerTotal);
         } 
